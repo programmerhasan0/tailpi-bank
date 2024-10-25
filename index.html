@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>TailPi Bank</title>
+    </head>
+    <body class="container mx-auto">
+        <div
+            class="card-wrap grid grid-cols-1 md:grid-cols-3 mt-20 gap-3 text-white"
+        >
+            <div class="deposit bg-[#6A5ACD] p-2 rounded-lg">
+                <p class="text-4xl">Deposit</p>
+                <p class="text-4xl mt-4">$ <span id="deposit">00</span></p>
+            </div>
+            <div class="withdraw bg-[#FFA07A] p-2 rounded-lg">
+                <p class="text-4xl">withdraw</p>
+                <p class="text-4xl mt-4">$ <span id="withdraw">00</span></p>
+            </div>
+            <div class="balance bg-[#FFA500] p-2 rounded-lg">
+                <p class="text-4xl">Balance</p>
+                <p class="text-4xl mt-4">$ <span id="balance">1240</span></p>
+            </div>
+        </div>
+
+        <div class="input-wraper grid grid-cols-1 md:grid-cols-2 gap-5 mt-20">
+            <div class="max-w-[500px] border border-gray-400 p-10">
+                <input
+                    class="border border-gray-300 p-2 w-full h-8"
+                    type="number"
+                    placeholder="Enter the Deposit Amount"
+                    name=""
+                    id="depositAmount"
+                />
+                <div>
+                    <button
+                        class="bg-green-500 text-white px-4 py-2 rounded-md mt-5"
+                        id="addBtn"
+                    >
+                        Deposit
+                    </button>
+                </div>
+            </div>
+            <div class="max-w-[500px] border border-gray-400 p-10">
+                <input
+                    class="border border-gray-300 p-2 w-full h-8"
+                    type="number"
+                    placeholder="Enter the Deposit Amount"
+                    name=""
+                    id="withdrawAmount"
+                />
+                <div>
+                    <button
+                        class="bg-red-400 text-white px-4 py-2 rounded-md mt-5"
+                        id="withdrawBtn"
+                    >
+                        Withdraw
+                    </button>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="./scripts/main.js"></script>
+</html>
